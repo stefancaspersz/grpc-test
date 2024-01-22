@@ -8,7 +8,7 @@
     <h1>Mystery books you may like</h1>
     <ul>
     {% for book in recommendations %}
-        <li>{{ book.title }}</li>
+        <li><a href="{{ book.url }}">{{ book.title }}</a></li>
     {% endfor %}
     </ul>
 </body>

@@ -13,20 +13,20 @@ import recommendations_pb2_grpc
 
 books_by_category = {
     BookCategory.MYSTERY: [
-        BookRecommendation(id=1, title="The Maltese Falcon"),
-        BookRecommendation(id=2, title="Murder on the Orient Express"),
-        BookRecommendation(id=3, title="The Hound of the Baskervilles"),
-        BookRecommendation(id=10, title="The Bourne Identity"),
+        BookRecommendation(id=1, title="The Maltese Falcon", url="https://www.amazon.com.au/Maltese-Falcon-Dashiell-Hammett/dp/0679722645"),
+        BookRecommendation(id=2, title="Murder on the Orient Express", url="https://www.amazon.com.au/Murder-Orient-Express-Poirot-Christie-ebook/dp/B0046H95PO"),
+        BookRecommendation(id=3, title="The Hound of the Baskervilles", url="https://www.amazon.com.au/Hound-Baskervilles-Arthur-Conan-Doyle-ebook/dp/B01C4MLVR2"),
+        BookRecommendation(id=10, title="The Bourne Identity", url="https://www.amazon.com.au/Bourne-Identity-Robert-Ludlum/dp/1409167860"),
     ],
     BookCategory.SCIENCE_FICTION: [
-        BookRecommendation(id=4, title="The Hitchhiker's Guide to the Galaxy"),
-        BookRecommendation(id=5, title="Ender's Game"),
-        BookRecommendation(id=6, title="The Dune Chronicles"),
+        BookRecommendation(id=4, title="The Hitchhiker's Guide to the Galaxy", url="https://www.amazon.com.au/Hitchhikers-Guide-Galaxy-Illustrated/dp/1529046130"),
+        BookRecommendation(id=5, title="Ender's Game", url="https://www.amazon.com.au/Enders-Game-Orson-Scott-Card/dp/1904233023"),
+        BookRecommendation(id=6, title="The Dune Chronicles", url=""),
     ],
     BookCategory.SELF_HELP: [
-        BookRecommendation(id=7, title="The 7 Habits of Highly Effective People"),
-        BookRecommendation(id=8, title="How to Win Friends and Influence People"),
-        BookRecommendation(id=9, title="Man's Search for Meaning"),
+        BookRecommendation(id=7, title="The 7 Habits of Highly Effective People", url=""),
+        BookRecommendation(id=8, title="How to Win Friends and Influence People", url=""),
+        BookRecommendation(id=9, title="Man's Search for Meaning", url=""),
     ],
 }
 

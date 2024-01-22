@@ -15,6 +15,7 @@ message RecommendationRequest {
 message BookRecommendation {
     int32 id = 1;
     string title = 2;
+    string url = 3;
 }
 
 message RecommendationResponse {
