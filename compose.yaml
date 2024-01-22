@@ -1,0 +1,28 @@
+services:
+
+  marketplace:
+    build:
+      context: .
+      dockerfile: marketplace/Dockerfile
+      args:
+      - BUILD_ENV=${BUILD_ENV:-production}
+    environment:
+      - RECOMMENDATIONS_HOST=recommendations
+    image: marketplace
+    networks:
+      - microservices
+    ports:
+      - 5000:5000
+
+  recommendations:
+    build:
+      context: .
+      dockerfile: recommendations/Dockerfile
+      args:
+      - BUILD_ENV=${BUILD_ENV:-production}
+    image: recommendations
+    networks:
+      - microservices
+
+networks:
+  microservices:
