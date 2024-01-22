@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/python:latest
+FROM public.ecr.aws/docker/library/python:slim
 
 RUN mkdir /service
 COPY protobufs/ /service/protobufs/
