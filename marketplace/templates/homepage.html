@@ -5,10 +5,14 @@
     <title>Online Books For You</title>
 </head>
 <body>
-    <h1>Mystery books you may like</h1>
-    <ul>
-    {% for book in recommendations %}
-        <li><a href="{{ book.url }}">{{ book.title }}</a></li>
-    {% endfor %}
-    </ul>
+    <h1>Online Books For You</h1>
+    <p>Choose a category to see our recommendations:</p>
+    <form action="/" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.category.label }} {{ form.category() }}
+        {% for error in form.category.errors %}
+            <div class="error">{{ error }}</div>
+        {% endfor %}
+        <input type="submit" value="Get Recommendations">
+    </form>
 </body>
