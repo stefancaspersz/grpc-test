@@ -1,4 +1,5 @@
 flask
+flask-wtf
 grpcio-tools
 Jinja2
 pytest
